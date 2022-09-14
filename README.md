@@ -3,14 +3,13 @@
 ## 説明
 manngakataroの始め方
 ### 必要なライブラリ
-requirements.txt参照
-### ライブラリなどのインストール方法
- 
+requirements.txt
+Django~=3.2.15
+### 基本的な使い方
+クローン
 ```bash
-pip install -r requirements.txt
 git clone https://github.com/dsuke0526/original-app.git
 ```
-### 基本的な使い方
 仮想環境
 ```bash
 python -m venv myvenv
@@ -29,6 +28,3 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
-#### 補足
-requirements.txt
-Django~=3.2.15
