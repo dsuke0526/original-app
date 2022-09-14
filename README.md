@@ -1,4 +1,4 @@
-# original-app(manngakataro)
+# original-app(mangakataro)
 
 ## 説明
 manngakataroの始め方
