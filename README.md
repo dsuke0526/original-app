@@ -8,6 +8,7 @@ requirements.txt参照
  
 ```bash
 pip install -r requirements.txt
+git clone https://github.com/dsuke0526/original-app.git
 ```
 ### 基本的な使い方
 仮想環境
