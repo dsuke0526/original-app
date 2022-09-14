@@ -28,3 +28,6 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
+#### 補足
+requirements.txt
+Django~=3.2.15
