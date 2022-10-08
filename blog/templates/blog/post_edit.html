@@ -4,6 +4,7 @@
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
+        <input id="grade" name="grade"  class="rating rating-loading" data-min="0" data-max="5" data-step="0.5" data-size="xs">
         <button type="submit" class="save btn btn-default">Save</button>
     </form>
 {% endblock %}
