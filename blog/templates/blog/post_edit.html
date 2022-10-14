@@ -4,7 +4,26 @@
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <input id="grade" name="grade"  class="rating rating-loading" data-min="0" data-max="5" data-step="0.5" data-size="xs">
+        <form>
+            <div class="page-header"></div>
+            <input type="text" class="kv-fa rating-loading" value="3.75" dir="rtl" data-size="xl" title="">
+            <div class="clearfix"></div>
+        </form>
         <button type="submit" class="save btn btn-default">Save</button>
     </form>
+    <script>
+        $(document).on('ready', function () {
+            
+            
+            $('.kv-fa').rating({
+                theme: 'krajee-fa',
+                filledStar: '<i class="fa fa-star"></i>',
+                emptyStar: '<i class="fa fa-star-o"></i>'
+            });
+            $('.rating,.kv-fa').on(
+                    'change', function () {
+                        console.log('Rating selected: ' + $(this).val());
+                    });
+        });
+     </script>
 {% endblock %}

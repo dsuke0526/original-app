@@ -3,7 +3,6 @@
     height: 25px;
     font-size: 0;
     color: #fff;
-    background: transparent url('../img/loading.gif') top left no-repeat;
     border: none;
 }
 
@@ -115,7 +114,7 @@
 }
 
 .rating-container .clear-rating {
-    padding-right: 5px;
+    padding-right: 780px;
 }
 
 /**
