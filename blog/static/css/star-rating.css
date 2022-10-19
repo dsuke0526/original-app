@@ -6,9 +6,6 @@
     border: none;
 }
 
-/*
- * Stars & Input
- */
 .rating-container .rating-stars {
     position: relative;
     cursor: pointer;

@@ -686,9 +686,8 @@
 
     $.fn.rating.Constructor = Rating;
 
-    /**
-     * Convert automatically inputs with class 'rating' into Krajee's star rating control.
-     */
+
+     
     $(document).ready(function () {
         var $input = $('input.rating');
         if ($input.length) {
