@@ -38,4 +38,8 @@ def post_edit(request, pk):
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
+<<<<<<< HEAD
     return redirect('post_list')    
+=======
+    return redirect('post_list')
+>>>>>>> 9502574 (retake)
