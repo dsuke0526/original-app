@@ -4,9 +4,12 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
+<<<<<<< HEAD
 from django.shortcuts import render
 from .models import Rating
 from django.http import JsonResponse
+=======
+>>>>>>> 9502574 (retake)
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
@@ -41,6 +44,7 @@ def post_edit(request, pk):
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
+<<<<<<< HEAD
     return redirect('post_list')   
 def main_view(request):
     obj = Rating.objects.filter(score=0).order_by("?").first()
@@ -60,3 +64,6 @@ def rate_image(request):
         obj.save()
         return JsonResponse({'success':'true', 'score': val}, safe=False)
     return JsonResponse({'success':'false'}) 
+=======
+    return redirect('post_list')
+>>>>>>> 9502574 (retake)

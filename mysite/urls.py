@@ -15,16 +15,23 @@ Including another URLconf
 """
 from xml.etree.ElementInclude import include
 from django.contrib import admin
+<<<<<<< HEAD
 from django.urls import path, include
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from blog.views import main_view, rate_image
 
+=======
+from django.urls import path,include
+>>>>>>> 9502574 (retake)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+<<<<<<< HEAD
     path('rate/', rate_image, name='rate-view'),
+=======
+>>>>>>> 9502574 (retake)
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
