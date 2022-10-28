@@ -130,7 +130,6 @@
 
 .rating-container .caption {
     color: #999;
-    display: inline-block;
     vertical-align: middle;
     line-height: 1;
 }
@@ -208,6 +207,7 @@
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25rem;
+    transform: translate(40px);
 }
 
 .caption-secondary {
