@@ -19,12 +19,12 @@ from django.urls import path, include
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from blog.views import main_view, rate_image
+from blog.views import  rate_image
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
-    path('rate/', rate_image, name='rate-view'),
+    path('rate/', rate_image, name='rate-view'),##'rate/'から変更
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
