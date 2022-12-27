@@ -19,7 +19,7 @@ const handleStarSelect = (size) => {
             children[i].classList.remove('checked')
         }
     }
-}
+} //ここで入力した値を基に星の変更を行っている
 
 const handleSelect = (selection) => {
     switch(selection){
@@ -89,15 +89,14 @@ if (one) {
         // value of the rating not numeric
         const val = event.target.id
         
-        let isSubmit = false
+        let isSubmit = false//ここをどうするか
         form.addEventListener('submit', e=>{
             e.preventDefault()
             if (isSubmit) {
                 return
             }
             isSubmit = true
-            // picture id
-            const id = e.target.id
+            
             // value of the rating translated into numeric
             const val_num = getNumericValue(val)
 
@@ -106,7 +105,7 @@ if (one) {
                 url: '/rate/',
                 data: {
                     'csrfmiddlewaretoken': csrf[0].value,
-                    'el_id': id,
+                    
                     'val': val_num,
                 },
                 success: function(response){

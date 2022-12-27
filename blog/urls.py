@@ -8,5 +8,5 @@ urlpatterns = [
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('post/<pk>/remove/', views.post_remove, name='post_remove'),
     path('rate/', views.rate_image, name='rate-view'),##post/rate/から変更
-    path('test/',views.rate_image),
+    path('test/',views.rate_image,name='rate-view'),
 ]
